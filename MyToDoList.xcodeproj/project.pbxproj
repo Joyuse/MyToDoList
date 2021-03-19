@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		F3729BD525FB7BEF00BD767A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3729BD425FB7BEF00BD767A /* AppDelegate.swift */; };
 		F3729BD725FB7BEF00BD767A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3729BD625FB7BEF00BD767A /* SceneDelegate.swift */; };
-		F3729BD925FB7BEF00BD767A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3729BD825FB7BEF00BD767A /* ViewController.swift */; };
 		F3729BDC25FB7BEF00BD767A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3729BDA25FB7BEF00BD767A /* Main.storyboard */; };
 		F3729BDE25FB7BF300BD767A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3729BDD25FB7BF300BD767A /* Assets.xcassets */; };
 		F3729BE125FB7BF300BD767A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3729BDF25FB7BF300BD767A /* LaunchScreen.storyboard */; };
 		F3729BEC25FB7BF300BD767A /* MyToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3729BEB25FB7BF300BD767A /* MyToDoListTests.swift */; };
 		F3729BF725FB7BF300BD767A /* MyToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3729BF625FB7BF300BD767A /* MyToDoListUITests.swift */; };
+		F3729C1325FE2FD400BD767A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3729C1225FE2FD400BD767A /* TableViewController.swift */; };
+		F3729C1825FE303A00BD767A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3729C1725FE303A00BD767A /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		F3729BD125FB7BEF00BD767A /* MyToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3729BD425FB7BEF00BD767A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3729BD625FB7BEF00BD767A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3729BD825FB7BEF00BD767A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3729BDB25FB7BEF00BD767A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3729BDD25FB7BF300BD767A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3729BE025FB7BF300BD767A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		F3729BF225FB7BF300BD767A /* MyToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3729BF625FB7BF300BD767A /* MyToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToDoListUITests.swift; sourceTree = "<group>"; };
 		F3729BF825FB7BF300BD767A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3729C1225FE2FD400BD767A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F3729C1725FE303A00BD767A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,9 @@
 			children = (
 				F3729BD425FB7BEF00BD767A /* AppDelegate.swift */,
 				F3729BD625FB7BEF00BD767A /* SceneDelegate.swift */,
-				F3729BD825FB7BEF00BD767A /* ViewController.swift */,
 				F3729BDA25FB7BEF00BD767A /* Main.storyboard */,
+				F3729C1725FE303A00BD767A /* Model.swift */,
+				F3729C1225FE2FD400BD767A /* TableViewController.swift */,
 				F3729BDD25FB7BF300BD767A /* Assets.xcassets */,
 				F3729BDF25FB7BF300BD767A /* LaunchScreen.storyboard */,
 				F3729BE225FB7BF300BD767A /* Info.plist */,
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3729BD925FB7BEF00BD767A /* ViewController.swift in Sources */,
 				F3729BD525FB7BEF00BD767A /* AppDelegate.swift in Sources */,
+				F3729C1325FE2FD400BD767A /* TableViewController.swift in Sources */,
 				F3729BD725FB7BEF00BD767A /* SceneDelegate.swift in Sources */,
+				F3729C1825FE303A00BD767A /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2W5J56GRQ4;
 				INFOPLIST_FILE = MyToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2W5J56GRQ4;
 				INFOPLIST_FILE = MyToDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
