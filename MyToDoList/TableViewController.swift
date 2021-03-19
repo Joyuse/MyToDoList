@@ -12,7 +12,7 @@ class TableViewController: UITableViewController, UINavigationControllerDelegate
   
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         /* кушает кол-во нажатий = 2 можно изменить
         let tap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
             tap.numberOfTapsRequired = 2
@@ -172,8 +172,6 @@ class TableViewController: UITableViewController, UINavigationControllerDelegate
                 alertController.addAction(cancel)
                 alertController.addAction(apply)
             }
-            
-            
         }
         editButton.backgroundColor = UIColor.systemBlue
        
@@ -184,13 +182,17 @@ class TableViewController: UITableViewController, UINavigationControllerDelegate
         }
         //present(alertController, animated: true, completion: nil)
       
-        //появление контроллера с анимацией
-      
+        //добавить фотографию
+        let makePhoto = UITableViewRowAction(style: .normal, title: "Add Photo"){
+            (action,indexPath) in print("Photo")
+            print("MakePhotoButton")
+            //вызов камеры, сделать фотографию и поместить cell.image
+            //не успел до конца разобраться
+        }
         
         
-        return [delete,editButton]
+        return [delete,editButton,makePhoto]
     }
-    
     /*
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
